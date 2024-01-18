@@ -1,0 +1,345 @@
+@font-face {
+    font-family: FIGSans;
+    src: url("FIGSans.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: GTPressuraMono;
+    src: url("GT-Pressura-Mono-Light-Trial.woff2") format('woff2');
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    font-family: GTPressuraMono, monospace;
+    font-weight: 100;
+    font-size: .95em;
+    background-image: url('airbrushbackground.png');
+    color: black;
+    line-height: 1.35em;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+}
+
+#left{
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+#right{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 67%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1{
+    margin-top: .004em;
+    margin-bottom: .0025em;
+    font-family: FIGSans, Helvetica, Arial, sans-serif;
+    font-size: 5em;
+    line-height: .95em;
+    font-weight:100;
+}
+
+h4{
+    font-family: FIGSans, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    line-height: .95em;
+    font-weight:100;
+}
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
+    maximum-scale: 1.0;
+    user-scalable: no;
+}
+
+/* Update body styles for mobile */
+body {
+    font-size: 16px; /* Set a base font size for easier scaling */
+}
+
+/* MOBILE OPTIMIZATIONS*/
+@media only screen and (max-width: 768px) {
+    #left, #right {
+        width: 100%;
+        float: none;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    /* Adjust padding for better spacing */
+    #left {
+        padding-bottom: 1em;
+        position: relative; /* Reset position for the left side */
+    }
+
+    #right {
+        position: relative; /* Reset position for the right side */
+        width: 100%; /* Take full width when window width is reduced */
+        right: auto; /* Reset right positioning */
+    }
+
+    html, body {
+        overflow: auto;
+    }
+}
+/* MOBILE OPTIMIZATIONS*/
+
+
+sup {
+    vertical-align: top;
+    position: relative; 
+    top: -0.4em;
+}
+
+sup a{
+    text-decoration-line: none;
+}
+
+.narrow{
+    padding-right: 8em;
+}
+
+.extra-pad{
+    padding-bottom: 3em;
+}
+
+.first{
+    padding-left: 3em;
+}
+
+.second{
+    padding-left: 6em;
+}
+
+.third{
+    padding-left: 9em;
+}
+
+#this{
+    padding-left: 50%;
+}
+
+
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-family: FIGSans, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    line-height: .95em;
+    font-weight: 100;
+    letter-spacing: .1em;
+}
+
+form {
+    text-align: center;
+    border: 1.5px solid #D8E6D8;
+    border-radius: 1em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    margin-bottom: 5em;
+}
+
+form * {
+    font-family: GTPressuraMono, monospace;
+    font-weight: 100;
+    display: block;
+    font-size: .95em;
+    background-color: transparent;
+    line-height: 1.3em;
+}
+
+.Contact {
+    font-family: FIGSans, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    line-height: 100px;
+}
+
+input,
+textarea {
+    margin-bottom: 1em; /* Adjusted margin for better spacing */
+    width: 100%;
+    border: 1.5px solid #D8E6D8;
+    border-radius: .25em;
+}
+
+input {
+    height: 2em;
+}
+
+textarea {
+    resize: none;
+}
+
+button{
+    border: 1.5px solid #3C403C;
+    border-radius: .25em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline-color: #3C403C;
+    outline: 1.5px;
+    background-color: #D8E6D8;
+}
+
+.convo{
+    padding-left: 2em;
+}
+
+.convo div{
+    padding-left: 2em;
+}
+
+.guest{
+    padding-left: 2em;
+}
+
+thead *{
+    text-transform:uppercase;
+    letter-spacing: .1em;
+    border-radius: .25em;
+}
+
+
+table{
+    display: block;
+    border-collapse: collapse;
+    border-spacing: 0;
+    height: 100%;
+}
+
+tr{
+    height: auto;
+}
+
+thead tr:first-child {
+    height: 50px; /* Set a different height for the first row in the thead */
+}
+
+tbody tr:hover{
+    background-color: #a4adbf;
+}
+
+td{
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left: 3px solid black;
+    vertical-align: top;
+}
+
+tbody td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.type{
+    max-width: 5em;
+    overflow: auto;
+}
+
+.link{
+    width: 5em;
+    padding-right: 0px;
+    overflow: auto;
+}
+
+.name{
+    width: 5em;
+}
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: #96B396;
+}
+
+#left a{
+    text-decoration-line: none;
+}
+
+#left a:hover{
+    background-color: #D8E6D8;
+}
+
+#preface p, #introduction p{
+    margin-left: 2em;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+  }
+.strip {
+    height: 0;
+    background-color: #D8E6D8;
+    transition: height 0.5s;
+    line-height: 500px;
+    text-align: center;
+    overflow: hidden;
+  }
+.top.active .strip{
+    height: 60px;
+  }
+.button {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 60px; /* Set the width of your button */
+    height: 60px; /* Set the height of your button */
+    background-color: transparent; /* Make the background transparent */
+    border: none; /* Remove the default button border */
+    background-image: url('smiley.png'); /* Set the path to your image */
+    background-size: cover; /* Cover the entire button with the background image */
+    cursor: pointer; /* Change cursor to pointer on hover for better user experience */
+    display: inline-block;
+    cursor: pointer;
+  }
+  .arrow-down {
+    transition: transform 0.5s;
+  }
+  .top.active .arrow-down{
+    transform: rotate(180deg)
+  }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
