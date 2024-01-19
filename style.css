@@ -1,11 +1,11 @@
 @font-face {
     font-family: FIGSans;
-    src: url("./fonts/FIGSans.woff2") format('woff2');
+    src: url("./Fonts/FIGSans.woff2") format('woff2');
 }
 
 @font-face {
     font-family: GTPressuraMono;
-    src: url("./fonts/GT-Pressura-Mono-Light-Trial.woff2") format('woff2');
+    src: url("./Fonts/GT-Pressura-Mono-Light-Trial.woff2") format('woff2');
 }
 
 html, body {
