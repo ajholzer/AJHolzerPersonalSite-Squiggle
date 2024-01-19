@@ -1,11 +1,11 @@
 @font-face {
     font-family: FIGSans;
-    src: url("FIGSans.woff2") format('woff2');
+    src: url("fonts/FIGSans.woff2") format('woff2');
 }
 
 @font-face {
     font-family: GTPressuraMono;
-    src: url("GT-Pressura-Mono-Light-Trial.woff2") format('woff2');
+    src: url("fonts/GT-Pressura-Mono-Light-Trial.woff2") format('woff2');
 }
 
 html, body {
@@ -15,7 +15,7 @@ html, body {
     font-family: GTPressuraMono, monospace;
     font-weight: 100;
     font-size: .95em;
-    background-image: url('airbrushbackground.png');
+    background-image: url('images/airbrushbackground.png');
     color: black;
     line-height: 1.35em;
 }
