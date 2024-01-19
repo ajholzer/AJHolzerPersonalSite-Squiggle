@@ -15,7 +15,7 @@ html, body {
     font-family: GTPressuraMono, monospace;
     font-weight: 100;
     font-size: .95em;
-    background-image: url('./images/airbrushbackground.png');
+    background-image: url('./Images/airbrushbackground.png');
     color: black;
     line-height: 1.35em;
 }
